@@ -1,0 +1,109 @@
+.upload-container{
+    padding-left: 2em;
+    height: 10em;
+    width: 100%;
+    padding-right: 2em;
+    margin-top: 2em;
+}
+.location-container{
+    display: flex;
+    flex-direction: row;
+}
+.filter{
+    margin-top: 0.5em;
+}
+.custom-filters{
+    display: flex;
+    flex-direction: row;
+    width: 62vw;
+    justify-content: initial;
+    margin-top: 1em;
+}
+.group-by-location{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+.start-date{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 1em;
+}
+.end-date{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 1em;
+}
+.filter-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+.filter-heading{
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.apply-filter{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.clear-filter{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.filter-buttons{
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+.filter-component{
+    margin-top: 1em;
+    width: 25vw;
+}
+.title{
+    margin-left: 4em;
+}
+.menu-container-down{
+    background: #02A8DE;
+}
+.ui.small.menu {
+    background: rgba(2,168,222,0.1) !important;
+}
+.section-heading{
+    margin-top: 2em;
+}
+.ui.card>.image>img{
+    padding: 1em !important;
+    width: 70% !important;
+}
+.ui.card{
+    max-width: fit-content !important;
+    padding: 1em;
+}
+.uploaded-detail{
+    margin-top: 2em;
+    display: flex;
+}
+.name{
+    margin: 1em;
+}
+.appearance{
+    margin-top: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+.view-relation{
+    margin: 1em;
+}
+.custom-size{
+    width: 70%;
+}
+.upload-title-down{
+margin-top: 6em;
+margin-left: 2em;
+}

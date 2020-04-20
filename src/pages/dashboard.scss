@@ -1,0 +1,124 @@
+.logo{
+    height: 20%;
+}
+.total-container{
+    height: 100vh;
+    width: 100vw;
+}
+.ui.menu .item {
+    padding-left: 4%;
+  }
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4em;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4em;
+}
+.page-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.ui.massive.menu {
+    background: #02A8DE;
+}
+.ui.menu{
+    border-radius: 0;
+}
+.ui.menu .item { 
+    padding-top: .92857143em;
+    padding-bottom: .92857143em;
+    padding-left: 0;
+    padding-right: 1.14285714em;
+    padding: 0;
+}
+.ui.attached.menu:not(.tabular) {
+    border: 0px;
+}
+.ui.menu {
+    border: 0 none !important;
+    box-shadow: none;
+    min-height: 4em !important;
+  }
+.ui.menu .ui.dropdown .menu>.item{
+    font-size: 0.8em!important;
+}
+.upload-title{
+    margin-top: 2em;
+    margin-left: 2em;
+}
+.upload-container{
+    padding-left: 2em;
+    height: 10em;
+    width: 100%;
+    padding-right: 2em;
+    margin-top: 2em;
+}
+.upload{
+    border: 1px dashed #02A8DE;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #02A8DE;
+    font-size: 2.4em;
+    margin-bottom: 0.8em;
+}
+.upload-button{
+width: 100%;
+font-size: 1em;
+margin-top: 2em;
+}
+.ui.button {
+    font-size: 0.8em !important;
+    width: 100%;
+    line-height: 2em !important;
+}
+.ui.primary.button{
+    background-color: #02A8DE !important;
+}
+.pusher{
+    padding-top: 2em;
+}
+.detail-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65vw;
+    opacity: 0.5;
+}
+.uploaded-detail{
+    margin-top: 1em;
+}
+.image-uploaded{
+    display: inline-block;
+}
+.btn-container{
+    margin-top: 1em;
+}
+.image-search{
+    padding: 1em;
+}
+.ui.card>.image>img{
+    background: #fff !important;
+}
+.ui.card{
+    box-shadow: 0 1px 10px 0 #eaeaea, 0 0 10px 1px #ececec !important;
+}
