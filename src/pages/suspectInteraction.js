@@ -1,22 +1,22 @@
 
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './suspectInteraction.scss';
-import { Button, Modal, Image, Header, Grid, Segment } from 'semantic-ui-react'
+import ReactDOM from 'react-dom';
+import { Button, Grid } from 'semantic-ui-react'
+import SemanticDatepicker from 'react-semantic-ui-datepickers';
+import 'react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css';
 import DropdownComponent from '../components/dropdown';
 import PaginationComponent from '../components/pagination';
-import $ from 'jquery';
 import { Link } from 'react-router-dom';
 
 
 
 export default function SuspectInteraction(){
-
+    const [date, setDate] = useState(null);
+  const [dates, setDates] = useState([]);
+  const handleDateChange = (event, data) => setDate(data.value);
+  const handleDatesChange = (event, data) => setDates(data.value);
     return (
-        <html>
-            <head>
-                <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-            </head>
-        <body>
     <div class="total-container">
         
         <div class="ui massive menu menu-container attached borderless">
@@ -81,32 +81,40 @@ export default function SuspectInteraction(){
         <div class="filter">
             Use filters to customise your search
         </div>
-        <div class="custom-filters">
-            <div class="group-by-location">
+        
+        <div class="section-heading">
+            <h3>Listing all associates to the Suspect</h3>
+        </div>
+        <div class="uploaded-detail image-uploaded">
+        <Grid doubling class="doubling-grid">
+      <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
+      <div class="group-by-location">
                 <div class="filter-heading">Group by location</div>
                 <div class="filter-component">
                     <DropdownComponent></DropdownComponent>
                 </div>
+        </div>
+      </Grid.Column>
+      <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
+      <div class="start-date">
+                <div class="filter-heading">Start Date</div>
+                <div class="filter-component">
+               
+  <SemanticDatepicker onChange={handleDateChange} />
+
+                </div>
             </div>
-            <div class="start-date">
-                 <div class="filter-heading">StartDate</div>
-                <div class="filter-component"><div class="ui calendar" id="example2">
-    <div class="ui input left icon">
-      <i class="calendar icon"></i>
-      <input type="text" placeholder="Date"/>
-    </div>
-  </div></div>
-            </div>
-            <div class="end-date">
+      </Grid.Column>
+      <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
+      <div class="end-date">
                 <div class="filter-heading">End Date</div>
-                <div class="filter-component"><div class="ui calendar" id="example2">
-    <div class="ui input left icon">
-      <i class="calendar icon"></i>
-      <input type="text" placeholder="Date"/>
-    </div>
-  </div></div>
+                <div class="filter-component">
+                <SemanticDatepicker onChange={handleDateChange} />
+                </div>
             </div>
-            <div class="filter-btn">
+      </Grid.Column>
+      <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
+      <div class="filter-btn h-100">
                 <div class="filter-buttons">
                     <button class="ui primary button apply-filter">APPLY</button>
                 </div>
@@ -117,11 +125,11 @@ export default function SuspectInteraction(){
                 </div>
 
             </div>
-        </div>
-        <div class="section-heading">
-            <h3>Listing all associates to the Suspect</h3>
-        </div>
-        <div class="uploaded-detail image-uploaded">
+      </Grid.Column>
+
+
+      
+    </Grid>
         <Grid doubling >
       <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
         <div class="ui card">
@@ -153,9 +161,7 @@ export default function SuspectInteraction(){
 
   </div>
 </div>  
-    </div>
-    </body>
-    </html>
+        </div> 
 
 )
             

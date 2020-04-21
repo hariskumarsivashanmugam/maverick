@@ -132,8 +132,11 @@ export default function SuspectAssociationVideos(){
         <div class="ui image">
             <img  src={require('../assets/video.jpg')}/>
             <div class="play-button">
-            <i class="play inverted icon"></i>
+            <i class="play inverted large icon"></i>
             </div>
+        </div>
+        <div class="name">
+                <h4>298 Sycamore Lake Road</h4>
         </div>
         </div>
         }>
@@ -150,11 +153,6 @@ export default function SuspectAssociationVideos(){
     </Modal.Content>
   </Modal>
   </Grid.Column>
-
-
-
-
-
 </Grid>
         
 
