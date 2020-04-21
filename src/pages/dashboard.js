@@ -1,7 +1,15 @@
 import React from 'react';
 import './dashboard.scss';
+import {
+  Link
+} from "react-router-dom";
+import SuspectInteraction from './suspectInteraction';
 
-export default function Dashboard(){
+export default function Dashboard () {
+  let goToInteraction = () => {
+    console.log('clicked');
+    this.props.history.push('/suspectInteraction');
+  }
     return (
     <div class="total-container">
         <div class="ui massive menu menu-container attached borderless">
@@ -61,13 +69,14 @@ export default function Dashboard(){
     Get associated results based on this image uploaded
 </div>
 <div class="btn-container">
-<button class="ui primary button">SEARCH INTERACTION</button>
+<Link to='/suspectInteraction'><button class="ui primary button" >SEARCH INTERACTION</button></Link>
 </div>
         </div>
         </div>
 
   </div>
 </div>  
+
     </div>
 )
             

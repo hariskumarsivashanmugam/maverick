@@ -77,8 +77,8 @@
     margin-top: 2em;
 }
 .ui.card>.image>img{
-    padding: 1em !important;
-    width: 70% !important;
+    padding: 0em !important;
+
 }
 .ui.card{
     max-width: fit-content !important;
@@ -106,4 +106,14 @@
 .upload-title-down{
 margin-top: 6em;
 margin-left: 2em;
+}
+.ui.modal>.content{
+    padding: 0rem !important;
+}
+.play-button{
+    position: absolute;
+    bottom: 50%;
+    /* top: auto; */
+    /* right: auto; */
+    left: 50%;
 }

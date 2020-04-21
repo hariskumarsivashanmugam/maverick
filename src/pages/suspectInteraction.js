@@ -1,14 +1,24 @@
-import React from 'react';
+
+import React, { Component } from 'react';
 import './suspectInteraction.scss';
-import { Button } from 'semantic-ui-react'
+import { Button, Modal, Image, Header, Grid, Segment } from 'semantic-ui-react'
 import DropdownComponent from '../components/dropdown';
 import PaginationComponent from '../components/pagination';
+import $ from 'jquery';
+import { Link } from 'react-router-dom';
+
+
 
 export default function SuspectInteraction(){
-    
-    return (
 
+    return (
+        <html>
+            <head>
+                <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+            </head>
+        <body>
     <div class="total-container">
+        
         <div class="ui massive menu menu-container attached borderless">
         <div class="title">
             <div class="logo">Maverick.io</div>
@@ -33,7 +43,7 @@ export default function SuspectInteraction(){
 <div class="ui small menu menu-container-down attached borderless">
         <div class="title">
         <div class="ui small breadcrumb">
-  <a class="section">Upload Image</a>
+  <Link to='/dashboard'><a class="section">Upload Image</a></Link>
   <i class="right chevron icon divider"></i>
   <div class="active section">Suspect's Interaction</div>
 </div>
@@ -80,16 +90,21 @@ export default function SuspectInteraction(){
             </div>
             <div class="start-date">
                  <div class="filter-heading">StartDate</div>
-                 <div class="ui calendar" id="example2">
-    <div class="ui input right icon">
+                <div class="filter-component"><div class="ui calendar" id="example2">
+    <div class="ui input left icon">
       <i class="calendar icon"></i>
       <input type="text" placeholder="Date"/>
     </div>
-  </div>
+  </div></div>
             </div>
             <div class="end-date">
                 <div class="filter-heading">End Date</div>
-            
+                <div class="filter-component"><div class="ui calendar" id="example2">
+    <div class="ui input left icon">
+      <i class="calendar icon"></i>
+      <input type="text" placeholder="Date"/>
+    </div>
+  </div></div>
             </div>
             <div class="filter-btn">
                 <div class="filter-buttons">
@@ -107,22 +122,31 @@ export default function SuspectInteraction(){
             <h3>Listing all associates to the Suspect</h3>
         </div>
         <div class="uploaded-detail image-uploaded">
+        <Grid doubling >
+      <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
         <div class="ui card">
-  <div class="ui image">
-    <img  src={require('../assets/profileImage.jpg')} class="custom-size"/>
-  </div>
-  <div class="name">
-      <h3>John Doe</h3>
-  </div>
-  <div class="appearance">
-      Appearance : 14
-  </div>
-  <div class="view-relation">
-         <Button basic color='#02A8DE' class="apply-filter">
-                    VIEW RELATION
-        </Button>
-  </div>
-</div>
+            <div class="ui image">
+                <img  src={require('../assets/profileImage.jpg')}/>
+            </div>
+            <div class="name">
+                <h3>John Doe</h3>
+            </div>
+            <div class="appearance">
+                Appearance : 14
+            </div>
+            <div class="view-relation">
+            <Link to='/suspectAssociationVideos'><Button basic color='#02A8DE' class="apply-filter">
+                                VIEW RELATION
+                    </Button></Link>
+            </div>
+            </div>
+      </Grid.Column>
+
+
+      
+    </Grid>
+
+  
 
         </div>
         </div>
@@ -130,6 +154,8 @@ export default function SuspectInteraction(){
   </div>
 </div>  
     </div>
+    </body>
+    </html>
 
 )
             

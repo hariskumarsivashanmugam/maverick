@@ -1,17 +1,41 @@
 import React from 'react';
 import './suspectAssociationVideos.scss';
-import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import { Button, Header, Image, Modal, Embed, Grid } from 'semantic-ui-react'
 import DropdownComponent from '../components/dropdown';
 import $ from 'jquery'; 
+import { Link } from 'react-router-dom';
+import ModalComponent from '../components/modal';
 
 export default function SuspectAssociationVideos(){
-    $(document).ready(function(){
-    $('#btnModal').click(function() {
-        $('.ui.modal').modal('show');
-      })
-    });
     return (
+      <html>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+            <script>
+    $('.ui.modal')
+      .modal('show')
+    ;
+    </script>
+        <body>
+        <div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Modal Title
+  </div>
+  <div class="image content">
+    <div class="image">
+      An image can appear on left or an icon
+    </div>
+    <div class="description">
+      A description can appear on the right
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui button">Cancel</div>
+    <div class="ui button">OK</div>
+  </div>
+</div>
 
+      
     <div class="total-container">
         <div class="ui massive menu menu-container attached borderless">
         <div class="title">
@@ -37,9 +61,9 @@ export default function SuspectAssociationVideos(){
 <div class="ui small menu menu-container-down attached borderless">
         <div class="title">
         <div class="ui small breadcrumb">
-  <a class="section">Upload Image</a>
+        <Link to='/dashboard'><a class="section">Upload Image</a></Link>
   <i class="right chevron icon divider"></i>
-  <a class="section">Suspect's Interaction</a>
+  <Link to='/suspectInteraction'><a class="section">Suspect's Interaction</a></Link>
   <i class="right chevron icon divider"></i>
   <div class="active section">Suspect and Association Videos</div>
 </div>
@@ -100,28 +124,55 @@ export default function SuspectAssociationVideos(){
             <h3>Video from 15:23, 12, April, 2019</h3>
         </div>
         <div class="uploaded-detail image-uploaded">
-        <div class="video-container">
-        <button id="btnModal" class="ui button">Show Modal</button>
-        <div class="ui modal test">
-  <div class="header">Select a Photo</div>
-  <div class="content">
-    <div class="description">
-      <div class="ui header">Default Profile Image</div>
-      <p>We've found the following gravatar image associated with your e-mail address.</p>
-      <p>Is it okay to use this photo?</p>
-    </div>
+
+        <Grid doubling >
+      <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
+        <Modal trigger={
+        <div class="ui card">
+        <div class="ui image">
+            <img  src={require('../assets/video.jpg')}/>
+            <div class="play-button">
+            <i class="play inverted icon"></i>
+            </div>
+        </div>
+        </div>
+        }>
+    <Modal.Content>
+      <Embed
+      autoplay={true}
+      brandedUI
+      color='white'
+      hd={false}
+      id='D0WnZyxp_Wo'
+      placeholder='/static/media/video.764962ea.jpg'
+      source='youtube'
+    />
+    </Modal.Content>
+  </Modal>
+  </Grid.Column>
+
+
+
+
+
+</Grid>
+        
+
+        </div>
+        </div>
+        </div>
+  
+
+
   </div>
-</div>
-        </div>
 
-        </div>
-        </div>
-
+  
   </div>
-</div>  
+  </body>
 
-    </div>
-    
+
+</html>
+
     
 )
             

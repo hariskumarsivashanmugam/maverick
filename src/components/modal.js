@@ -1,21 +1,31 @@
-import React from 'react'
-import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import React from 'react';
 
-const ModalComponent = () => (
-  <Modal trigger={<Button>Show Modal</Button>}>
-    <Modal.Header>Select a Photo</Modal.Header>
-    <Modal.Content image>
-      <Image wrapped size='medium' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' />
-      <Modal.Description>
-        <Header>Default Profile Image</Header>
-        <p>
-          We've found the following gravatar image associated with your e-mail
-          address.
-        </p>
-        <p>Is it okay to use this photo?</p>
-      </Modal.Description>
-    </Modal.Content>
-  </Modal>
-)
+import './modal.scss';
 
-export default ModalComponent
+const modal = (props) => {
+    return (
+        <div>
+            <div className="modal-wrapper"
+                style={{
+                    transform: props.show ? 'translateY(0vh)' : 'translateY(-100vh)',
+                    opacity: props.show ? '1' : '0'
+                }}>
+                <div className="modal-header">
+                    <h3>Modal Header</h3>
+                    <span className="close-modal-btn" onClick={props.close}>×</span>
+                </div>
+                <div className="modal-body">
+                    <p>
+                        {props.children}
+                    </p>
+                </div>
+                <div className="modal-footer">
+                    <button className="btn-cancel" onClick={props.close}>CLOSE</button>
+                    <button className="btn-continue">CONTINUE</button>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default modal;
