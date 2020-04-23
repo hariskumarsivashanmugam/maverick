@@ -1,41 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './suspectAssociationVideos.scss';
 import { Button, Header, Image, Modal, Embed, Grid } from 'semantic-ui-react'
 import DropdownComponent from '../components/dropdown';
-import $ from 'jquery'; 
 import { Link } from 'react-router-dom';
-import ModalComponent from '../components/modal';
-
-export default function SuspectAssociationVideos(){
+import video from '../json/video_association.json'
+export default class Dashboard extends Component {
+  constructor(props){
+    super();
+  }
+componentDidMount(){
+}
+  render(){
     return (
-      <html>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-            <script>
-    $('.ui.modal')
-      .modal('show')
-    ;
-    </script>
-        <body>
-        <div class="ui modal">
-  <i class="close icon"></i>
-  <div class="header">
-    Modal Title
-  </div>
-  <div class="image content">
-    <div class="image">
-      An image can appear on left or an icon
-    </div>
-    <div class="description">
-      A description can appear on the right
-    </div>
-  </div>
-  <div class="actions">
-    <div class="ui button">Cancel</div>
-    <div class="ui button">OK</div>
-  </div>
-</div>
-
-      
     <div class="total-container">
         <div class="ui massive menu menu-container attached borderless">
         <div class="title">
@@ -113,9 +89,7 @@ export default function SuspectAssociationVideos(){
                     <button class="ui primary button apply-filter">APPLY</button>
                 </div>
                 <div class="filter-buttons">
-                    <Button basic color='#02A8DE' class="apply-filter">
-                    CLEAR
-                    </Button>
+                <button class="ui basic button">CLEAR</button>
                 </div>
 
             </div>
@@ -126,6 +100,8 @@ export default function SuspectAssociationVideos(){
         <div class="uploaded-detail image-uploaded">
 
         <Grid doubling >
+        {video.map(el => {
+                  return (
       <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
         <Modal trigger={
         <div class="ui card">
@@ -136,7 +112,7 @@ export default function SuspectAssociationVideos(){
             </div>
         </div>
         <div class="name">
-                <h4>298 Sycamore Lake Road</h4>
+                {el.location}
         </div>
         </div>
         }>
@@ -153,6 +129,8 @@ export default function SuspectAssociationVideos(){
     </Modal.Content>
   </Modal>
   </Grid.Column>
+                  );
+        })}
 </Grid>
         
 
@@ -166,12 +144,9 @@ export default function SuspectAssociationVideos(){
 
   
   </div>
-  </body>
-
-
-</html>
+ 
 
     
-)
+)}
             
 }

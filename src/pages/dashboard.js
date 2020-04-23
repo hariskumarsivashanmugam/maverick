@@ -1,15 +1,17 @@
-import React from 'react';
+import React , { Component } from 'react';
 import './dashboard.scss';
 import {
   Link
 } from "react-router-dom";
 import SuspectInteraction from './suspectInteraction';
 
-export default function Dashboard () {
-  let goToInteraction = () => {
-    console.log('clicked');
-    this.props.history.push('/suspectInteraction');
+export default class Dashboard extends Component {
+  constructor(props){
+    super();
   }
+componentDidMount(){
+}
+  render(){
     return (
     <div class="total-container">
         <div class="ui massive menu menu-container attached borderless">
@@ -78,6 +80,7 @@ export default function Dashboard () {
 </div>  
 
     </div>
-)
-            
+);
+  }       
+
 }

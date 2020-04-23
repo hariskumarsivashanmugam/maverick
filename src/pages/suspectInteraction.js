@@ -1,15 +1,13 @@
 
 import React, { Component, useState } from 'react';
 import './suspectInteraction.scss';
-import ReactDOM from 'react-dom';
 import { Button, Grid } from 'semantic-ui-react'
 import SemanticDatepicker from 'react-semantic-ui-datepickers';
 import 'react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css';
 import DropdownComponent from '../components/dropdown';
 import PaginationComponent from '../components/pagination';
 import { Link } from 'react-router-dom';
-
-
+import association from '../json/association_details.json';
 
 export default function SuspectInteraction(){
     const [date, setDate] = useState(null);
@@ -119,18 +117,15 @@ export default function SuspectInteraction(){
                     <button class="ui primary button apply-filter">APPLY</button>
                 </div>
                 <div class="filter-buttons">
-                    <Button basic color='#02A8DE' class="apply-filter">
-                    CLEAR
-                    </Button>
+                <button class="ui basic button">CLEAR</button>
                 </div>
 
             </div>
       </Grid.Column>
-
-
-      
     </Grid>
         <Grid doubling >
+        {association.map(el => {
+                  return (
       <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
         <div class="ui card">
             <div class="ui image">
@@ -140,7 +135,7 @@ export default function SuspectInteraction(){
                 <h3>John Doe</h3>
             </div>
             <div class="appearance">
-                Appearance : 14
+                  Appearance : {el.appearances}
             </div>
             <div class="view-relation">
             <Link to='/suspectAssociationVideos'><Button basic color='#02A8DE' class="apply-filter">
@@ -149,18 +144,23 @@ export default function SuspectInteraction(){
             </div>
             </div>
       </Grid.Column>
+      );
+    })}
 
 
       
     </Grid>
 
   
-
+    <div class="pagination">
+            <PaginationComponent></PaginationComponent>
+        </div>
         </div>
         </div>
 
   </div>
 </div>  
+
         </div> 
 
 )

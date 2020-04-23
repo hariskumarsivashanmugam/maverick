@@ -1,0 +1,369 @@
+[
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 1,
+        "appearances": 7,
+        "timestamp": [
+            0,
+            1,
+            2,
+            3,
+            96,
+            224,
+            106
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 2,
+        "appearances": 20,
+        "timestamp": [
+            293,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            213,
+            214,
+            190,
+            191
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 3,
+        "appearances": 13,
+        "timestamp": [
+            32,
+            33,
+            36,
+            37,
+            38,
+            39,
+            44,
+            276,
+            27,
+            28,
+            29,
+            30,
+            31
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-c0b5d7b115a9.mp4",
+        "location": "Hospital",
+        "cluster_id": 4,
+        "appearances": 8,
+        "timestamp": [
+            32,
+            33,
+            35,
+            27,
+            28,
+            29,
+            30,
+            31
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-c0b5d7b115a9.mp4",
+        "location": "Hospital",
+        "cluster_id": 5,
+        "appearances": 8,
+        "timestamp": [
+            32,
+            33,
+            34,
+            35,
+            27,
+            28,
+            29,
+            31
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 6,
+        "appearances": 4,
+        "timestamp": [
+            27,
+            28,
+            29,
+            30
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 7,
+        "appearances": 8,
+        "timestamp": [
+            32,
+            36,
+            37,
+            40,
+            28,
+            29,
+            30,
+            31
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-c0b5d7b115a9.mp4",
+        "location": "Hospital",
+        "cluster_id": 9,
+        "appearances": 2,
+        "timestamp": [
+            32,
+            33
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-c0b5d7b115a9.mp4",
+        "location": "Hospital",
+        "cluster_id": 14,
+        "appearances": 6,
+        "timestamp": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            254
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 17,
+        "appearances": 8,
+        "timestamp": [
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            89
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 18,
+        "appearances": 9,
+        "timestamp": [
+            96,
+            97,
+            102,
+            103,
+            104,
+            105,
+            106,
+            108,
+            109
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 20,
+        "appearances": 3,
+        "timestamp": [
+            105,
+            108,
+            109
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 21,
+        "appearances": 12,
+        "timestamp": [
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            152,
+            153,
+            154,
+            157,
+            159
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 22,
+        "appearances": 8,
+        "timestamp": [
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            126
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 26,
+        "appearances": 4,
+        "timestamp": [
+            176,
+            177,
+            180,
+            175
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 27,
+        "appearances": 4,
+        "timestamp": [
+            185,
+            187,
+            182,
+            183
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 28,
+        "appearances": 11,
+        "timestamp": [
+            192,
+            194,
+            195,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            216,
+            189
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-c0b5d7b115a9.mp4",
+        "location": "Hospital",
+        "cluster_id": 29,
+        "appearances": 2,
+        "timestamp": [
+            193,
+            298
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 31,
+        "appearances": 4,
+        "timestamp": [
+            224,
+            225,
+            226,
+            223
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 32,
+        "appearances": 3,
+        "timestamp": [
+            226,
+            227,
+            222
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-c0b5d7b115a9.mp4",
+        "location": "Hospital",
+        "cluster_id": 35,
+        "appearances": 2,
+        "timestamp": [
+            265,
+            274
+        ]
+    },
+    {
+        "video_id": "d3b4f370-756d-11ea-b04d-9.mp4",
+        "location": "Bus stand",
+        "cluster_id": 38,
+        "appearances": 2,
+        "timestamp": [
+            306,
+            302
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 39,
+        "appearances": 2,
+        "timestamp": [
+            305,
+            308
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 44,
+        "appearances": 10,
+        "timestamp": [
+            323,
+            324,
+            360,
+            329,
+            331,
+            333,
+            334,
+            335,
+            337,
+            338
+        ]
+    },
+    {
+        "video_id": "d3b4f370-7b04d-c0b5d7b115a9.mp4",
+        "location": "City center",
+        "cluster_id": 46,
+        "appearances": 7,
+        "timestamp": [
+            357,
+            359,
+            360,
+            361,
+            362,
+            363,
+            364
+        ]
+    }
+]

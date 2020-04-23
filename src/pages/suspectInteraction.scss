@@ -21,7 +21,7 @@
 }
 .group-by-location{
     margin-right: 0em !important;
-    max-width: 200px !important;
+    width: 100% !important;
 }
 // .group-by-location{
 //     display: flex;
@@ -119,4 +119,16 @@
 }
 .ui.grid {
     padding-top: 2em !important;
+}
+.ui.input{
+    width: 100%;
+}
+.field{
+    width: 100%;
+}
+.pagination{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
