@@ -9,7 +9,8 @@ import {
 import Dashboard from './pages/dashboard';
 import SuspectInteraction from './pages/suspectInteraction';
 import SuspectAssociationVideos from './pages/suspectAssociationVideos';
-
+import UploadComponent from './pages/upload';
+import GroupByLocation from './pages/groupByLocation'
 const $ = window.$;
 function App() {
   return (
@@ -22,9 +23,11 @@ function App() {
       <body>
 
       <Switch>
-         <Route exact path="/" component={Dashboard}/>
+         <Route exact path="/" component={UploadComponent}/>
+          <Route exact path="/upload" component={UploadComponent}/>
           <Route exact path="/dashboard" component={Dashboard}/>
           <Route exact path="/suspectInteraction" component={SuspectInteraction}/> 
+          <Route exact path="/suspectInteraction/groupbylocation" component={GroupByLocation}/> 
           <Route exact path="/suspectAssociationVideos" component={SuspectAssociationVideos}/>
         </Switch>
 

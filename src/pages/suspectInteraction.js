@@ -19,7 +19,10 @@ export default function SuspectInteraction(){
         
         <div class="ui massive menu menu-container attached borderless">
         <div class="title">
-            <div class="logo">Maverick.io</div>
+            <div class="logo"> <img
+            src={require('../assets/logo_maverickio.png')} 
+            class="ui small image"
+        /></div>
             <div class="page-title">Dashboard</div>
         </div>
          <div class="right menu">
@@ -114,10 +117,10 @@ export default function SuspectInteraction(){
       <Grid.Column tablet={7} computer={5} largeScreen={4} widescreen={3}>
       <div class="filter-btn h-100">
                 <div class="filter-buttons">
-                    <button class="ui primary button apply-filter">APPLY</button>
+                <Link to='/suspectInteraction/groupbylocation'><button class="ui primary button apply-filter">APPLY</button></Link>
                 </div>
                 <div class="filter-buttons">
-                <button class="ui basic button">CLEAR</button>
+                <Link to='/suspectInteraction'><button class="ui basic button">CLEAR</button></Link>
                 </div>
 
             </div>

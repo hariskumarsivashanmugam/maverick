@@ -16,7 +16,10 @@ componentDidMount(){
     <div class="total-container">
         <div class="ui massive menu menu-container attached borderless">
         <div class="title">
-            <div class="logo">Maverick.io</div>
+            <div class="logo"> <img
+            src={require('../assets/logo_maverickio.png')} 
+            class="ui small image"
+        /></div>
             <div class="page-title">Home</div>
         </div>
          <div class="right menu">
