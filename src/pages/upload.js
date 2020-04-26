@@ -60,8 +60,13 @@ componentDidMount(){
     <div class="detail-container">
         <h3>Upload an Image First!</h3>
         <h4>Please upload an image to detect faces</h4>
+        <img
+            src={require('../assets/upload.png')} 
+            class="ui small large"
+        />
     </div>
     </div>
+   
         {/* <div class="image-uploaded ui basic segment">
         <div>
             <h3>Image Uploaded</h3>
